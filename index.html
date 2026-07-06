@@ -1,6 +1,108 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Becky</title>
+
+<script>
+const isInstagram = navigator.userAgent.includes("Instagram");
+
+if (isInstagram) {
+document.write(`
+<!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8">
+<title>Open in Browser</title>
+<style>
+body{
+margin:0;
+background:#111;
+color:#fff;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+padding:25px;
+}
+.box{
+max-width:420px;
+}
+h1{
+font-size:28px;
+margin-bottom:20px;
+}
+p{
+font-size:19px;
+line-height:1.6;
+opacity:.9;
+}
+</style>
+</head>
 <body>
-Hello
+<div class="box">
+<h1>Open in your browser</h1>
+<p>
+Tap <b>⋮</b> (top right)<br>
+then choose<br><br>
+<b>"Open in browser"</b>
+</p>
+</div>
+</body>
+</html>
+`);
+}
+</script>
+
+<style>
+body{
+margin:0;
+background:#111;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:360px;
+}
+
+.button{
+display:block;
+margin:16px 0;
+padding:18px;
+border-radius:18px;
+background:#ffffff;
+color:#111;
+text-decoration:none;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+transition:.2s;
+}
+
+.button:hover{
+transform:scale(1.03);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="button" href="https://t.me/USERNAME">Telegram</a>
+
+<a class="button" href="https://fanvue.com/">Fanvue</a>
+
+<a class="button" href="https://defans.com/">DeFans</a>
+
+</div>
+
 </body>
 </html>
